@@ -9,15 +9,14 @@ fi
 mkdir -p "$HOME/.config/syncthing"
 
 set -x
-#	-v /etc:/host/etc \
 docker run -d \
 	--name syncthing \
 	--restart always \
-	-u "$(id -u):$(id -g)" \
+	--user "$(id -u):$(id -g)" \
 	-v "$HOME:$HOME" \
 	-v "$HOME/.config/syncthing:/home/user/.config/syncthing" \
 	-v /etc:/etc \
 	-v /mnt:/mnt \
 	--net host \
-	tianon/syncthing "$@"
+	tianon/syncthing:0.12 "$@"
 timeout 10s docker logs -f syncthing || true
