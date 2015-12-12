@@ -14,9 +14,7 @@ url='git://github.com/tianon/docker-syncthing'
 
 echo '# maintainer: Tianon Gravi <admwiggin@gmail.com> (@tianon)'
 
-for (( i = ${#versions[@]} - 1; i >= 0; --i )); do
-	version="${versions[$i]}"
-
+for version in "${versions[@]}"; do
 	commit="$(cd "$version" && git log -1 --format='format:%H' -- Dockerfile $(awk 'toupper($1) == "COPY" { for (i = 2; i < NF; i++) { print $i } }' Dockerfile))"
 	fullVersion="$(grep -m1 'ENV SYNCTHING_VERSION ' "$version/Dockerfile" | cut -d' ' -f3)"
 	versionAliases=( $fullVersion $version ${aliases[$version]} )
