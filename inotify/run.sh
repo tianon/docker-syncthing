@@ -19,5 +19,5 @@ docker run -d \
 	-v /etc:/etc \
 	-v /mnt:/mnt \
 	--net host \
-	tianon/syncthing-inotify "$@"
+	tianon/syncthing:inotify "$@"
 timeout 10s docker logs -f syncthing-inotify || true
