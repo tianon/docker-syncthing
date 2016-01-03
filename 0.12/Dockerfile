@@ -7,7 +7,7 @@ RUN apk add --update ca-certificates && rm -rf /var/cache/apk/*
 # gpg: key 00654A3E: public key "Syncthing Release Management <release@syncthing.net>" imported
 ENV SYNCTHING_GPG_KEY 37C84554E7E0A261E4F76E1ED26E6ED000654A3E
 
-ENV SYNCTHING_VERSION 0.12.10
+ENV SYNCTHING_VERSION 0.12.11
 
 RUN set -x \
 	&& installDeps='gnupg' \
