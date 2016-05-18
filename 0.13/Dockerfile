@@ -7,7 +7,7 @@ RUN apk add --no-cache ca-certificates
 # gpg: key 00654A3E: public key "Syncthing Release Management <release@syncthing.net>" imported
 ENV SYNCTHING_GPG_KEY 37C84554E7E0A261E4F76E1ED26E6ED000654A3E
 
-ENV SYNCTHING_VERSION 0.13.0
+ENV SYNCTHING_VERSION 0.13.1
 
 RUN set -x \
 	&& apk add --no-cache --virtual .temp-deps gnupg \
