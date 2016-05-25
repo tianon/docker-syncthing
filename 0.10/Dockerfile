@@ -11,12 +11,13 @@ ENV SYNCTHING_VERSION 0.10.31
 
 RUN set -x \
 	&& apt-get update && apt-get install -y wget --no-install-recommends && rm -rf /var/lib/apt/lists/* \
+	&& wget "http://archive.syncthing.net/v${SYNCTHING_VERSION}/sha1sum.txt.asc" \
 	&& tarball="syncthing-linux-amd64-v${SYNCTHING_VERSION}.tar.gz" \
-	&& wget "http://archive.syncthing.net/v${SYNCTHING_VERSION}/"{"$tarball",sha1sum.txt.asc} \
+	&& wget "http://archive.syncthing.net/v${SYNCTHING_VERSION}/$tarball" \
 	&& apt-get purge -y --auto-remove wget \
-	&& gpg --verify sha1sum.txt.asc \
-	&& grep -E " ${tarball}\$" sha1sum.txt.asc | sha1sum -c - \
-	&& rm sha1sum.txt.asc \
+	&& gpg --batch --decrypt --output sha1sum.txt sha1sum.txt.asc \
+	&& grep -E " ${tarball}\$" sha1sum.txt | sha1sum -c - \
+	&& rm sha1sum.txt* \
 	&& tar -xvf "$tarball" --strip-components=1 "$(basename "$tarball" .tar.gz)"/syncthing \
 	&& mv syncthing /usr/local/bin/syncthing \
 	&& rm "$tarball"
