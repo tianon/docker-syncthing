@@ -4,7 +4,7 @@ RUN useradd --create-home user
 
 RUN apt-get update && apt-get install -y ca-certificates --no-install-recommends && rm -rf /var/lib/apt/lists/*
 
-ENV SYNCTHING_INOTIFY_VERSION 0.8.2
+ENV SYNCTHING_INOTIFY_VERSION 0.8.3
 
 RUN set -x \
 	&& apt-get update && apt-get install -y curl --no-install-recommends && rm -rf /var/lib/apt/lists/* \
