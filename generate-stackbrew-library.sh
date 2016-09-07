@@ -1,9 +1,8 @@
 #!/bin/bash
 set -e
 
-declare -A aliases
-aliases=(
-	[0.13]='0 latest'
+declare -A aliases=(
+	[0.14]='0 latest'
 )
 
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"

@@ -18,5 +18,7 @@ docker run -d \
 	-v /etc:/etc \
 	-v /mnt:/mnt \
 	--net host \
-	tianon/syncthing:0.12 "$@"
+	-e STNODEFAULTFOLDER=1 \
+	-e STNOUPGRADE=1 \
+	tianon/syncthing:0.14 "$@"
 timeout 10s docker logs -f syncthing || true
