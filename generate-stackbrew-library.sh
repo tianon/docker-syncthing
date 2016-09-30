@@ -34,7 +34,7 @@ dirCommit() {
 }
 
 cat <<-EOH
-# this file is generated via https://github.com/docker-library/golang/blob/$(fileCommit "$self")/$self
+# this file is generated via https://github.com/tianon/docker-syncthing/blob/$(fileCommit "$self")/$self
 
 Maintainers: Tianon Gravi <admwiggin@gmail.com> (@tianon)
 GitRepo: https://github.com/tianon/docker-syncthing.git
