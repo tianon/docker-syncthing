@@ -3,6 +3,7 @@ set -eu
 
 declare -A aliases=(
 	[0.14]='0 latest'
+	[0.14-rc]='rc'
 )
 
 self="$(basename "$BASH_SOURCE")"
@@ -52,6 +53,8 @@ for version in "${versions[@]}"; do
 
 	fullVersion="$(git show "$commit":"$version/Dockerfile" | awk '$1 == "ENV" && $2 == "SYNCTHING_VERSION" { print $3; exit }')"
 
+	rcVersion="${version%-rc}"
+
 	versionAliases=()
 	case "$version" in
 		inotify)
@@ -64,8 +67,11 @@ for version in "${versions[@]}"; do
 			;;
 
 		*)
+			while [ "$fullVersion" != "$rcVersion" -a "${fullVersion%[.]*}" != "$fullVersion" ]; do
+				versionAliases+=( $fullVersion )
+				fullVersion="${fullVersion%[.]*}"
+			done
 			versionAliases+=(
-				$fullVersion
 				$version
 				${aliases[$version]:-}
 			)
