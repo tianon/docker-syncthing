@@ -1,4 +1,4 @@
-FROM alpine:3.3
+FROM alpine:3.5
 
 RUN adduser -D user
 
@@ -10,7 +10,9 @@ ENV SYNCTHING_GPG_KEY 37C84554E7E0A261E4F76E1ED26E6ED000654A3E
 ENV SYNCTHING_VERSION 0.13.10
 
 RUN set -x \
-	&& apk add --no-cache --virtual .temp-deps gnupg \
+	&& apk add --no-cache --virtual .temp-deps \
+		gnupg \
+		libressl \
 	&& tarball="syncthing-linux-amd64-v${SYNCTHING_VERSION}.tar.gz" \
 	&& wget \
 		"https://github.com/syncthing/syncthing/releases/download/v${SYNCTHING_VERSION}/$tarball" \
