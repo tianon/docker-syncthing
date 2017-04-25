@@ -21,4 +21,4 @@ exec docker run -i $dashT --rm \
 	-v "$HOME/.config/syncthing:/home/user/.config/syncthing" \
 	--net host \
 	-e STENDPOINT='http://127.0.0.1:8080' \
-	tianon/syncthing:cli syncthing-cli "$@"
+	tianon/syncthing:utils stcli "$@"
