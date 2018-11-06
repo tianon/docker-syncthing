@@ -28,7 +28,9 @@ RUN set -x \
 	&& rm "$tarball" \
 	&& mv "$bin" /usr/local/bin/syncthing \
 	&& rmdir "$dir" \
-	&& apk del .temp-deps
+	&& apk del .temp-deps \
+# smoke test
+	&& syncthing -help
 
 USER user
 CMD ["syncthing"]
