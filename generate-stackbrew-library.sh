@@ -67,10 +67,14 @@ for version in "${versions[@]}"; do
 			;;
 
 		*)
-			while [ "$fullVersion" != "$rcVersion" -a "${fullVersion%[.]*}" != "$fullVersion" ]; do
+			if [ "$version" = "$rcVersion" ]; then
+				while [ "$fullVersion" != "$rcVersion" -a "${fullVersion%[.-]*}" != "$fullVersion" ]; do
+					versionAliases+=( $fullVersion )
+					fullVersion="${fullVersion%[.-]*}"
+				done
+			else
 				versionAliases+=( $fullVersion )
-				fullVersion="${fullVersion%[.]*}"
-			done
+			fi
 			versionAliases+=(
 				$version
 				${aliases[$version]:-}
