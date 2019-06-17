@@ -4,5 +4,5 @@ set -e
 cd "$(dirname "$(readlink -f "$BASH_SOURCE")")"
 
 ./generate-stackbrew-library.sh > syncthing
-bashbrew build --namespace tianon ./syncthing
+bashbrew --namespace tianon build ./syncthing
 rm syncthing
