@@ -1,6 +1,6 @@
-FROM alpine:3.6
+FROM alpine:3.10
 
-RUN adduser -D user
+RUN addgroup -g 1000 user && adduser -u 1000 -G user -D user
 
 RUN apk add --no-cache ca-certificates
 
