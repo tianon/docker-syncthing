@@ -20,5 +20,5 @@ docker run -d \
 	--net host \
 	-e STNODEFAULTFOLDER=1 \
 	-e STNOUPGRADE=1 \
-	tianon/syncthing:0.14 "$@"
+	tianon/syncthing:1 "$@"
 timeout 10s docker logs -f syncthing || true
