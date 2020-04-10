@@ -56,31 +56,18 @@ for version in "${versions[@]}"; do
 	rcVersion="${version%-rc}"
 
 	versionAliases=()
-	case "$version" in
-		inotify)
-			fullVersion="$(git show "$commit":"$version/Dockerfile" | awk '$1 == "ENV" && $2 == "SYNCTHING_INOTIFY_VERSION" { print $3; exit }')"
-			while [ "${fullVersion%[.-]*}" != "$fullVersion" ]; do
-				versionAliases+=( $version-$fullVersion )
-				fullVersion="${fullVersion%[.-]*}"
-			done
-			versionAliases+=( $version-$fullVersion $version )
-			;;
-
-		*)
-			if [ "$version" = "$rcVersion" ]; then
-				while [ "$fullVersion" != "$rcVersion" -a "${fullVersion%[.-]*}" != "$fullVersion" ]; do
-					versionAliases+=( $fullVersion )
-					fullVersion="${fullVersion%[.-]*}"
-				done
-			else
-				versionAliases+=( $fullVersion )
-			fi
-			versionAliases+=(
-				$version
-				${aliases[$version]:-}
-			)
-			;;
-	esac
+	if [ "$version" = "$rcVersion" ]; then
+		while [ "$fullVersion" != "$rcVersion" -a "${fullVersion%[.-]*}" != "$fullVersion" ]; do
+			versionAliases+=( $fullVersion )
+			fullVersion="${fullVersion%[.-]*}"
+		done
+	else
+		versionAliases+=( $fullVersion )
+	fi
+	versionAliases+=(
+		$version
+		${aliases[$version]:-}
+	)
 
 	echo
 	cat <<-EOE
