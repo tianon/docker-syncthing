@@ -1,4 +1,4 @@
-FROM alpine:3.10
+FROM alpine:3.11
 
 RUN addgroup -g 1000 user && adduser -u 1000 -G user -D user
 
@@ -21,6 +21,7 @@ RUN set -x \
 	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "${SYNCTHING_GPG_KEY}" \
 	&& gpg --batch --decrypt --output sha1sum.txt sha1sum.txt.asc \
 	&& grep -E " ${tarball}\$" sha1sum.txt | sha1sum -c - \
+	&& gpgconf --kill all \
 	&& rm -r "$GNUPGHOME" sha1sum.txt sha1sum.txt.asc \
 	&& dir="$(basename "$tarball" .tar.gz)" \
 	&& bin="$dir/syncthing" \
