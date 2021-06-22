@@ -18,7 +18,7 @@ RUN set -x \
 		"https://github.com/syncthing/syncthing/releases/download/v${SYNCTHING_VERSION}/$tarball" \
 		"https://github.com/syncthing/syncthing/releases/download/v${SYNCTHING_VERSION}/sha1sum.txt.asc" \
 	&& export GNUPGHOME="$(mktemp -d)" \
-	&& gpg --batch --keyserver ha.pool.sks-keyservers.net --recv-keys "${SYNCTHING_GPG_KEY}" \
+	&& gpg --batch --keyserver keyserver.ubuntu.com --recv-keys "${SYNCTHING_GPG_KEY}" \
 	&& gpg --batch --decrypt --output sha1sum.txt sha1sum.txt.asc \
 	&& grep -E " ${tarball}\$" sha1sum.txt | sha1sum -c - \
 	&& gpgconf --kill all \
