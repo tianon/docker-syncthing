@@ -49,9 +49,11 @@ join() {
 }
 
 for version in "${versions[@]}"; do
+	export version
+
 	commit="$(dirCommit "$version")"
 
-	fullVersion="$(git show "$commit":"$version/Dockerfile" | awk '$1 == "ENV" && $2 == "SYNCTHING_VERSION" { print $3; exit }')"
+	fullVersion="$(jq -r '.[env.version].version' versions.json)"
 
 	rcVersion="${version%-rc}"
 
@@ -69,10 +71,19 @@ for version in "${versions[@]}"; do
 		${aliases[$version]:-}
 	)
 
+	from="$(awk '$1 == "FROM" { print $2; exit }' "$version/Dockerfile")" # TODO multi-stage build??
+	fromArches="$(bashbrew remote arches --json "$from" | jq -c '.arches | keys')"
+	arches="$(jq -r --argjson fromArches "$fromArches" '
+		$fromArches - ($fromArches - (.[env.version].arches | keys))
+		| join(", ")
+	' versions.json)"
+	[ -n "$arches" ]
+
 	echo
 	cat <<-EOE
 		Tags: $(join ', ' "${versionAliases[@]}")
 		GitCommit: $commit
 		Directory: $version
+		Architectures: $arches
 	EOE
 done

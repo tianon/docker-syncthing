@@ -1,0 +1,31 @@
+FROM alpine:3.18
+
+RUN set -eux; \
+	addgroup -g 1000 user; \
+	adduser -u 1000 -G user -D user
+
+# https://github.com/syncthing/syncthing/releases
+ENV SYNCTHING_VERSION {{ .version }}
+
+RUN set -eux; \
+	apkArch="$(apk --print-arch)"; \
+	case "$apkArch" in \
+{{ .arches | map( -}}
+		{{ .apkArch // empty | @sh }}) url={{ .url | @sh }}; sha256={{ .sha256 | @sh }} ;; \
+{{ ) | add -}}
+		*) echo >&2 "error: unsupported architecture: '$apkArch'"; exit 1 ;; \
+	esac; \
+	tarball="$(basename "$url")"; \
+	wget -O "$tarball" "$url"; \
+	echo "$sha256 *$tarball" | sha256sum -c -; \
+	dir="${tarball%.tar.*}"; \
+	bin="$dir/syncthing"; \
+	tar -xvf "$tarball" "$bin"; \
+	rm "$tarball"; \
+	mv "$bin" /usr/local/bin/; \
+	rmdir "$dir"; \
+# smoke test
+	syncthing -help
+
+USER user
+CMD ["syncthing"]
