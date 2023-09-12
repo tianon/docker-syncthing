@@ -28,6 +28,7 @@ jobs:
           image="${image#docker-}"
           export GITHUB_REPOSITORY="$image"
           strategy="$("$BASHBREW_SCRIPTS/github-actions/generate.sh")"
+          strategy="$("$BASHBREW_SCRIPTS/github-actions/munge-i386.sh" -c <<<"$strategy")"
           echo "strategy=$strategy" >> "$GITHUB_OUTPUT"
           jq . <<<"$strategy" # sanity check / debugging aid
 
