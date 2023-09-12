@@ -25,7 +25,7 @@ RUN set -eux; \
 	mv "$bin" /usr/local/bin/; \
 	rmdir "$dir"; \
 # smoke test
-	syncthing -help
+	syncthing --help
 
 USER user
 CMD ["syncthing"]
