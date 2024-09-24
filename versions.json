@@ -208,214 +208,214 @@
     }
   },
   "1-rc": {
-    "commit": "0ea90dd932332b025889a67bfda8e153d8afea14",
-    "ref": "refs/tags/v1.27.13-rc.1^{}",
-    "tag": "v1.27.13-rc.1",
-    "version": "1.27.13-rc.1",
+    "commit": "cba163a1fdf2c2ad24b27683ed44b90d945ba764",
+    "ref": "refs/tags/v1.28.0-rc.1^{}",
+    "tag": "v1.28.0-rc.1",
+    "version": "1.28.0-rc.1",
     "arches": {
       "dragonfly-amd64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-dragonfly-amd64-v1.27.13-rc.1.tar.gz",
-        "sha256": "3aeda10615bad94736c51c1b27b2302d7dd8a446e1b15a532417faacc60f2942",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-dragonfly-amd64-v1.28.0-rc.1.tar.gz",
+        "sha256": "90e1d5a906b68261909e63677697ab1cb07bc9f17afe53f86506109cb00afb8e",
         "apkArch": null
       },
       "freebsd-i386": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-freebsd-386-v1.27.13-rc.1.tar.gz",
-        "sha256": "1e0674df95b1930920d597ee11fa02e863a59153a29654fc194963cfe7663a45",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-freebsd-386-v1.28.0-rc.1.tar.gz",
+        "sha256": "797312bfb0f4f682af9a8000757702fd998fe0c927c5435fdad0bb5a450990d0",
         "apkArch": null
       },
       "freebsd-amd64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-freebsd-amd64-v1.27.13-rc.1.tar.gz",
-        "sha256": "ae9475135cbbdcb21729a3e213092e93dc04c9b2a5f77723a377d59b321875d9",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-freebsd-amd64-v1.28.0-rc.1.tar.gz",
+        "sha256": "8d50be24cec5562170b6df29ed769c3ddf7b66ce3845e78af702b6af53aaeacb",
         "apkArch": null
       },
       "freebsd-arm32v5": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-freebsd-arm-v1.27.13-rc.1.tar.gz",
-        "sha256": "7757db1425d8383877fb5fba00d3e637f588e6a6bc6732089b841887fdae0fb9",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-freebsd-arm-v1.28.0-rc.1.tar.gz",
+        "sha256": "710971508984843a8ca97afa3f321826c15f2f17c35db47433dbd58a19e267cb",
         "apkArch": null
       },
       "freebsd-arm32v6": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-freebsd-arm-v1.27.13-rc.1.tar.gz",
-        "sha256": "7757db1425d8383877fb5fba00d3e637f588e6a6bc6732089b841887fdae0fb9",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-freebsd-arm-v1.28.0-rc.1.tar.gz",
+        "sha256": "710971508984843a8ca97afa3f321826c15f2f17c35db47433dbd58a19e267cb",
         "apkArch": null
       },
       "freebsd-arm32v7": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-freebsd-arm-v1.27.13-rc.1.tar.gz",
-        "sha256": "7757db1425d8383877fb5fba00d3e637f588e6a6bc6732089b841887fdae0fb9",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-freebsd-arm-v1.28.0-rc.1.tar.gz",
+        "sha256": "710971508984843a8ca97afa3f321826c15f2f17c35db47433dbd58a19e267cb",
         "apkArch": null
       },
       "freebsd-arm64v8": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-freebsd-arm64-v1.27.13-rc.1.tar.gz",
-        "sha256": "9fb9b27a09d7af70e3c290154dcc4435190fcc8d96e357611d9d7bc577b1d62b",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-freebsd-arm64-v1.28.0-rc.1.tar.gz",
+        "sha256": "010a69ce24c026a7ecc6222c011d470aa860c8cb42fccb4541d119138d9f52b7",
         "apkArch": null
       },
       "illumos-amd64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-illumos-amd64-v1.27.13-rc.1.tar.gz",
-        "sha256": "0be50a14fa0ee6580dd8023c66fd07467163078af7fd904ac89c3d84e66987a9",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-illumos-amd64-v1.28.0-rc.1.tar.gz",
+        "sha256": "42bcc60cd7eb4fedf44044a497454d2ec377877491d2fdff9f8f2356b9d6d2e1",
         "apkArch": null
       },
       "i386": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-386-v1.27.13-rc.1.tar.gz",
-        "sha256": "2c5f0291736891f07cde4b906d218d262373858bb83bee02579859ccc4d8c029",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-386-v1.28.0-rc.1.tar.gz",
+        "sha256": "88d4e07d71b9fe775ad75dba3a4c4014a987a1134d19af063e18432f78bf2784",
         "apkArch": "x86"
       },
       "amd64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-amd64-v1.27.13-rc.1.tar.gz",
-        "sha256": "dac3bea9cb71ee2bd4f51767876adcd2b0531611a0b53a539893061d584bc141",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-amd64-v1.28.0-rc.1.tar.gz",
+        "sha256": "64cec53d336d2f738939992bfff2eae317389ebd349747b7c877023e13367162",
         "apkArch": "x86_64"
       },
       "arm32v5": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-arm-v1.27.13-rc.1.tar.gz",
-        "sha256": "a8ff52c769649c2665c01abecdb352daa922e6d9e3bc867466bbacbae08a36b2",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-arm-v1.28.0-rc.1.tar.gz",
+        "sha256": "ebb56e81d54da8133e78857e10854a364c04bfab7264baaf28cd9cd3bd7c0068",
         "apkArch": null
       },
       "arm32v6": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-arm-v1.27.13-rc.1.tar.gz",
-        "sha256": "a8ff52c769649c2665c01abecdb352daa922e6d9e3bc867466bbacbae08a36b2",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-arm-v1.28.0-rc.1.tar.gz",
+        "sha256": "ebb56e81d54da8133e78857e10854a364c04bfab7264baaf28cd9cd3bd7c0068",
         "apkArch": "armhf"
       },
       "arm32v7": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-arm-v1.27.13-rc.1.tar.gz",
-        "sha256": "a8ff52c769649c2665c01abecdb352daa922e6d9e3bc867466bbacbae08a36b2",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-arm-v1.28.0-rc.1.tar.gz",
+        "sha256": "ebb56e81d54da8133e78857e10854a364c04bfab7264baaf28cd9cd3bd7c0068",
         "apkArch": "armv7"
       },
       "arm64v8": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-arm64-v1.27.13-rc.1.tar.gz",
-        "sha256": "a95b53d881ef441e9c3cd0f52a4218f410423ca422636bb0ae7c3b08fab82b49",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-arm64-v1.28.0-rc.1.tar.gz",
+        "sha256": "e0c6c22b2ff2ae0cf1842d8ca0f83db261cbf9d677df801d56a69ccd098801a8",
         "apkArch": "aarch64"
       },
       "loong64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-loong64-v1.27.13-rc.1.tar.gz",
-        "sha256": "2031a695320b15fcc35ca053f9a697dfce8bc44891b14606a29a056a563cb9b3",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-loong64-v1.28.0-rc.1.tar.gz",
+        "sha256": "1584a103510b9424d93421658231512633379bcec038aefc1d539557a7a85801",
         "apkArch": null
       },
       "mips": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-mips-v1.27.13-rc.1.tar.gz",
-        "sha256": "2d97f9d15cdfa63390fc4e24ccad7e167770bd19b1fba7d0674fc28a34def9da",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-mips-v1.28.0-rc.1.tar.gz",
+        "sha256": "f888e904257ccba4a3de04fbf196f3488baf0a1f45d072da08b87e47e15104ea",
         "apkArch": null
       },
       "mips64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-mips64-v1.27.13-rc.1.tar.gz",
-        "sha256": "0f5559ce5af746c300725f6bf5625d83db4d3ddafdf3fece5a3040a37188bd3f",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-mips64-v1.28.0-rc.1.tar.gz",
+        "sha256": "dcbea8cb5d07b17d89303433400e8e8cc0cd3c80baca311ded9afd6cb9caf777",
         "apkArch": null
       },
       "mips64le": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-mips64le-v1.27.13-rc.1.tar.gz",
-        "sha256": "bf1a99fa22debff5cf3fb02036b3a9d66880cd181bf80ea7b215ecadaa70f01b",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-mips64le-v1.28.0-rc.1.tar.gz",
+        "sha256": "0ec55385f24d276a7555245d00f9ddbb12716693e73687967609891cbc59ece6",
         "apkArch": null
       },
       "mipsle": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-mipsle-v1.27.13-rc.1.tar.gz",
-        "sha256": "3d54f0da17d3fedb455b1d9ac16c1970c69263342b4896edf22938831ac8e7fe",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-mipsle-v1.28.0-rc.1.tar.gz",
+        "sha256": "13cce8621263459320af17c4965810b03b0af138c2b30dfb19dabaca57d67f9f",
         "apkArch": null
       },
       "ppc64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-ppc64-v1.27.13-rc.1.tar.gz",
-        "sha256": "41f694fad03cdcc75e925a430ffa8cc8fcc4abab067e8f139b9fe8a2c3b1d4ca",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-ppc64-v1.28.0-rc.1.tar.gz",
+        "sha256": "9fdd6f793ad7c59e821fbac7ed4dcc2bc6acd15fb93451cb68fcdea367049e87",
         "apkArch": null
       },
       "ppc64le": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-ppc64le-v1.27.13-rc.1.tar.gz",
-        "sha256": "c8e1528f15a90796b2a995de83a8ef56a8959a8f911044541ae5764bda24738d",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-ppc64le-v1.28.0-rc.1.tar.gz",
+        "sha256": "2a0df2ac5b2231537306dc7fdf6bdcdf46252517c2d20855db5f107233c61413",
         "apkArch": "ppc64le"
       },
       "riscv64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-riscv64-v1.27.13-rc.1.tar.gz",
-        "sha256": "2be3c2c350b49491d76ba270dc06c79d102268bf7b08e042af2c5ad1a5f58514",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-riscv64-v1.28.0-rc.1.tar.gz",
+        "sha256": "a7f1d6bb025730e36cb5d4dd97833ea80d6f51bddd6fdaea1d88bfa7917575a1",
         "apkArch": "riscv64"
       },
       "s390x": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-linux-s390x-v1.27.13-rc.1.tar.gz",
-        "sha256": "1e38c751fdf8d52a50695fc7b3b7a49e660d2507ac31af03b6c19a9e34925c84",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-linux-s390x-v1.28.0-rc.1.tar.gz",
+        "sha256": "1c84551f97ae66f14cb24e2db0a36e54213a24c72306a4ad8110fc0529688e66",
         "apkArch": "s390x"
       },
       "netbsd-amd64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-netbsd-amd64-v1.27.13-rc.1.tar.gz",
-        "sha256": "e177156d4b5bdb4594b94b6075a97e8e8c4b4541224f7fdf85a6cfa1bd9d46a7",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-netbsd-amd64-v1.28.0-rc.1.tar.gz",
+        "sha256": "817bc96f99efe4eb39f4e364ae641d50ad0f997769805c4743e89ad66fdfdfa5",
         "apkArch": null
       },
       "netbsd-arm64v8": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-netbsd-arm64-v1.27.13-rc.1.tar.gz",
-        "sha256": "3d8954f08cc818da6c2cc46363b8933b6cf80a1a3bee35e6a0a5e73ddcb01f02",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-netbsd-arm64-v1.28.0-rc.1.tar.gz",
+        "sha256": "21fd1f4e222e1de2202d7f8c8c803b7cc36531c546ced4ae8eb9ced136b3051c",
         "apkArch": null
       },
       "openbsd-i386": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-openbsd-386-v1.27.13-rc.1.tar.gz",
-        "sha256": "1ea7539f3f0b7410c485e7b4a713a26f926cfa779465a44692f9f455ef266d68",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-openbsd-386-v1.28.0-rc.1.tar.gz",
+        "sha256": "fe573a2f22706fffe3e3b36a5c745f1963baa9a079ad0671b385456090eebee8",
         "apkArch": null
       },
       "openbsd-amd64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-openbsd-amd64-v1.27.13-rc.1.tar.gz",
-        "sha256": "85cfbb5ac771da1a4ddcd34299e074319b631aa2c90e4ea1a94b0a35c77c47f8",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-openbsd-amd64-v1.28.0-rc.1.tar.gz",
+        "sha256": "fce66b64b70002710edaca40d7a8bca4e9da690324864b15b3aea0bf43e87a6e",
         "apkArch": null
       },
       "openbsd-arm32v5": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-openbsd-arm-v1.27.13-rc.1.tar.gz",
-        "sha256": "d529f363b656bb3a3166405953cb35487634db2978a4ccf0f612ce49a31152db",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-openbsd-arm-v1.28.0-rc.1.tar.gz",
+        "sha256": "17829561d52714b2c139daa4f78597927e48cfa8a9893c53097c8c919a2b30c7",
         "apkArch": null
       },
       "openbsd-arm32v6": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-openbsd-arm-v1.27.13-rc.1.tar.gz",
-        "sha256": "d529f363b656bb3a3166405953cb35487634db2978a4ccf0f612ce49a31152db",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-openbsd-arm-v1.28.0-rc.1.tar.gz",
+        "sha256": "17829561d52714b2c139daa4f78597927e48cfa8a9893c53097c8c919a2b30c7",
         "apkArch": null
       },
       "openbsd-arm32v7": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-openbsd-arm-v1.27.13-rc.1.tar.gz",
-        "sha256": "d529f363b656bb3a3166405953cb35487634db2978a4ccf0f612ce49a31152db",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-openbsd-arm-v1.28.0-rc.1.tar.gz",
+        "sha256": "17829561d52714b2c139daa4f78597927e48cfa8a9893c53097c8c919a2b30c7",
         "apkArch": null
       },
       "openbsd-arm64v8": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-openbsd-arm64-v1.27.13-rc.1.tar.gz",
-        "sha256": "2f77ae2bce65c9bea07d0e97977ed763eede7f744d2efecc3d7ce4c54abaa80f",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-openbsd-arm64-v1.28.0-rc.1.tar.gz",
+        "sha256": "dda499f75a63a2c1bbbea2005c2231a814aed5ef5c030e851e76707e87f415bc",
         "apkArch": null
       },
       "openbsd-riscv64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-openbsd-riscv64-v1.27.13-rc.1.tar.gz",
-        "sha256": "b0c346a7a25d4cdfdde2ca94321fa5c32b716926162080699bd7ed9139da0522",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-openbsd-riscv64-v1.28.0-rc.1.tar.gz",
+        "sha256": "4de90465a4d7dcc33a085979693ec2aea19a7a6b188bb499c50dd9e57cf45264",
         "apkArch": null
       },
       "solaris-amd64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-solaris-amd64-v1.27.13-rc.1.tar.gz",
-        "sha256": "88acc90fd7d8ef41678fbe52a661a6b1af83c5eee9a54467fe275fa460a0e794",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-solaris-amd64-v1.28.0-rc.1.tar.gz",
+        "sha256": "607a20bbbc0ae5c49551ab4981810be7e25bc1560ed9857012c7bbb611e391d5",
         "apkArch": null
       },
       "darwin-amd64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-macos-amd64-v1.27.13-rc.1.zip",
-        "sha256": "dccc6ac6857b8d90848116da9cc519aecf4916ccb8b7fc8bca6c9f385492051b",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-macos-amd64-v1.28.0-rc.1.zip",
+        "sha256": "970e40e67abb6e27f39d7a675a9a3f7522f31013e4b4e0de06953b377c971fdf",
         "apkArch": null
       },
       "darwin-arm64v8": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-macos-arm64-v1.27.13-rc.1.zip",
-        "sha256": "a7d2adf17ddc9154a6c0e4dd9bbe5e432e9940bb9dc5d246d149acc507fe510f",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-macos-arm64-v1.28.0-rc.1.zip",
+        "sha256": "8a0fe6a5248b2f8da39e274babca4fdb665fb35a1c6279c95e5f55ee187e9ab2",
         "apkArch": null
       },
       "windows-i386": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-windows-386-v1.27.13-rc.1.zip",
-        "sha256": "61c161668849dd571a96f357cf5e467f9bc896372c6dea0b4f208532f94e9d8d",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-windows-386-v1.28.0-rc.1.zip",
+        "sha256": "0090670e356ffd0755afe9b37dda13b17677cb52ef197ff915dd91655e982c74",
         "apkArch": null
       },
       "windows-amd64": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-windows-amd64-v1.27.13-rc.1.zip",
-        "sha256": "aa3f88785df60c4698fbefdb58fff5191345fb433016e0719f1924f84a3c0fa0",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-windows-amd64-v1.28.0-rc.1.zip",
+        "sha256": "5df51579b6b1567377d9f3d0a951f82e4f3516e56e5495a2f97e91cb1a679779",
         "apkArch": null
       },
       "windows-arm32v5": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-windows-arm-v1.27.13-rc.1.zip",
-        "sha256": "b9d23a9113fbaa8bcc63671b98271aefc5487d8f14372a1c1ff90c4c8ae403ed",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-windows-arm-v1.28.0-rc.1.zip",
+        "sha256": "fabb9c7d9589d5013433cf90a88e520f0c8a2265efe52b44134e67ca9534ce59",
         "apkArch": null
       },
       "windows-arm32v6": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-windows-arm-v1.27.13-rc.1.zip",
-        "sha256": "b9d23a9113fbaa8bcc63671b98271aefc5487d8f14372a1c1ff90c4c8ae403ed",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-windows-arm-v1.28.0-rc.1.zip",
+        "sha256": "fabb9c7d9589d5013433cf90a88e520f0c8a2265efe52b44134e67ca9534ce59",
         "apkArch": null
       },
       "windows-arm32v7": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-windows-arm-v1.27.13-rc.1.zip",
-        "sha256": "b9d23a9113fbaa8bcc63671b98271aefc5487d8f14372a1c1ff90c4c8ae403ed",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-windows-arm-v1.28.0-rc.1.zip",
+        "sha256": "fabb9c7d9589d5013433cf90a88e520f0c8a2265efe52b44134e67ca9534ce59",
         "apkArch": null
       },
       "windows-arm64v8": {
-        "url": "https://github.com/syncthing/syncthing/releases/download/v1.27.13-rc.1/syncthing-windows-arm64-v1.27.13-rc.1.zip",
-        "sha256": "5850a023bf83112205eeb6eb79047f4984fc6984fcac52f93553a63373a2f219",
+        "url": "https://github.com/syncthing/syncthing/releases/download/v1.28.0-rc.1/syncthing-windows-arm64-v1.28.0-rc.1.zip",
+        "sha256": "fbd7fc1f064fc9b956cfcb5db03c15e9a55bb30287d76beae1318bf41e8d1175",
         "apkArch": null
       }
     }
