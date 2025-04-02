@@ -4,7 +4,7 @@
 # PLEASE DO NOT EDIT IT DIRECTLY.
 #
 
-FROM alpine:3.18
+FROM alpine:3.21
 
 RUN set -eux; \
 	addgroup -g 1000 user; \
