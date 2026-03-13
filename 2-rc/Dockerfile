@@ -11,19 +11,19 @@ RUN set -eux; \
 	adduser -u 1000 -G user -D user
 
 # https://github.com/syncthing/syncthing/releases
-ENV SYNCTHING_VERSION 2.0.16-rc.1
+ENV SYNCTHING_VERSION 2.0.16-rc.2
 
 RUN set -eux; \
 	apkArch="$(apk --print-arch)"; \
 	case "$apkArch" in \
-		'x86') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.1/syncthing-linux-386-v2.0.16-rc.1.tar.gz'; sha256='f093ef6da553555e1d3dd4268af7eca2c373adb6ff4cb3d2611073c92593b687' ;; \
-		'x86_64') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.1/syncthing-linux-amd64-v2.0.16-rc.1.tar.gz'; sha256='2a7e55430302aaab245977458aba2e930c32cffa8cd10f72c451ec4b661b0497' ;; \
-		'armhf') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.1/syncthing-linux-arm-v2.0.16-rc.1.tar.gz'; sha256='7dde55243c420693bcc6668e3b1db72d4df980631ff0f558885add872ece79a1' ;; \
-		'armv7') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.1/syncthing-linux-arm-v2.0.16-rc.1.tar.gz'; sha256='7dde55243c420693bcc6668e3b1db72d4df980631ff0f558885add872ece79a1' ;; \
-		'aarch64') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.1/syncthing-linux-arm64-v2.0.16-rc.1.tar.gz'; sha256='00fd299157e9d0155b06d8cfc6c9abdd902b7b7b06f216e0803c751569b2d70a' ;; \
-		'ppc64le') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.1/syncthing-linux-ppc64le-v2.0.16-rc.1.tar.gz'; sha256='459fdee832cf424bad0cbb0dbbe109183a029b99ac80b32b7c326c166c384412' ;; \
-		'riscv64') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.1/syncthing-linux-riscv64-v2.0.16-rc.1.tar.gz'; sha256='f93e6d3513490296d15712bee943ff1e479c44562765cdcc6c2c9534d22b35f0' ;; \
-		's390x') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.1/syncthing-linux-s390x-v2.0.16-rc.1.tar.gz'; sha256='d5849ef4de537e52ed72842b3e161a5076384d5bc79f0404cc56d8b5dbea4cff' ;; \
+		'x86') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.2/syncthing-linux-386-v2.0.16-rc.2.tar.gz'; sha256='5dbeeba60456416f65b475cbb5012d99f7926f0fe77d2f4073538d069d0182e1' ;; \
+		'x86_64') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.2/syncthing-linux-amd64-v2.0.16-rc.2.tar.gz'; sha256='1daa839d06bd6f23d995e8ff9fcfe30b0dfb7f98e04cd79c8359216a4c7b1c96' ;; \
+		'armhf') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.2/syncthing-linux-arm-v2.0.16-rc.2.tar.gz'; sha256='499fd65e4b278858d38fd7482a6f6641182dea4a6dc3f8fcd4341a5f6a430b98' ;; \
+		'armv7') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.2/syncthing-linux-arm-v2.0.16-rc.2.tar.gz'; sha256='499fd65e4b278858d38fd7482a6f6641182dea4a6dc3f8fcd4341a5f6a430b98' ;; \
+		'aarch64') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.2/syncthing-linux-arm64-v2.0.16-rc.2.tar.gz'; sha256='5b4202cfcd96108c9cc002703ee82f133d7e12685904f0e12d2019ecd3fe9d80' ;; \
+		'ppc64le') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.2/syncthing-linux-ppc64le-v2.0.16-rc.2.tar.gz'; sha256='ddaa4a0793090472f07361b89c0f49b4668104219d627539e2195e54b42c36d0' ;; \
+		'riscv64') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.2/syncthing-linux-riscv64-v2.0.16-rc.2.tar.gz'; sha256='230f5238442ad0c30ce3a3eef6ee7ed51abfc7157b5ac13a22176bc80bc855c5' ;; \
+		's390x') url='https://github.com/syncthing/syncthing/releases/download/v2.0.16-rc.2/syncthing-linux-s390x-v2.0.16-rc.2.tar.gz'; sha256='088386dc6bcb81160c2660f3cf444aee5eee2b744d546f50467d2c90e6960a43' ;; \
 		*) echo >&2 "error: unsupported architecture: '$apkArch'"; exit 1 ;; \
 	esac; \
 	tarball="$(basename "$url")"; \
